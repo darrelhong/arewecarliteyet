@@ -3,4 +3,6 @@
 	import '@unocss/reset/tailwind.css';
 </script>
 
-<slot />
+<main class="flex min-h-dvh flex-col">
+	<slot />
+</main>
