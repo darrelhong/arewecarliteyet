@@ -63,6 +63,7 @@
 		{placeholder}
 		{id}
 		{name}
+		required
 		use:melt={$input}
 	/>
 	{#if $open}
