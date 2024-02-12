@@ -1,3 +1,7 @@
+<script lang="ts">
+	import Combobox from './combobox.svelte';
+</script>
+
 <section class="mx-auto mt-4 w-full max-w-3xl sm:mb-4">
 	<div class="mx-4">
 		<h1 class="text-5xl font-bold">Are we car lite yet?</h1>
@@ -7,28 +11,8 @@
 <section class="mx-auto mb-16 mt-8 w-full max-w-3xl">
 	<div class="mx-4">
 		<form class="flex flex-wrap gap-4">
-			<div class="grid flex-1 gap-1">
-				<label class="text-3xl font-semibold" for="from">From</label>
-				<input
-					size={28}
-					type="text"
-					class="rounded-lg border border-2 border-neutral-400 p-2"
-					placeholder="ION Orchard"
-					id="from"
-					name="from"
-				/>
-			</div>
-			<div class="grid flex-1 gap-1">
-				<label class="text-3xl font-semibold" for="to">To</label>
-				<input
-					size={28}
-					type="text"
-					class="rounded-lg border border-2 border-neutral-400 p-2"
-					placeholder="IKEA Tampines"
-					id="to"
-					name="to"
-				/>
-			</div>
+			<Combobox name="from" id="from" labelText="From" placeholder="ION Orchard" />
+			<Combobox name="to" id="to" labelText="To" placeholder="IKEA Tampines" />
 		</form>
 	</div>
 </section>
