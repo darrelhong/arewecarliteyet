@@ -45,12 +45,12 @@ export const actions = {
 
 		return {
 			drive: {
-				staticDuration: driveData[0].staticDuration,
-				localizedValue: driveData[0].localizedValues.staticDuration.text
+				staticDuration: driveData[0].staticDuration as string,
+				localizedValue: driveData[0].localizedValues.staticDuration.text as string
 			},
 			transit: {
-				staticDuration: transitData[0].staticDuration,
-				localizedValue: transitData[0].localizedValues.staticDuration.text
+				staticDuration: transitData[0].staticDuration as string,
+				localizedValue: transitData[0].localizedValues.staticDuration.text as string
 			}
 		};
 	}
