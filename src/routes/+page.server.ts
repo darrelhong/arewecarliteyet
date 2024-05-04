@@ -45,12 +45,13 @@ export const actions = {
 
 		return {
 			drive: {
-				staticDuration: driveData[0].staticDuration as string,
-				localizedValue: driveData[0].localizedValues.staticDuration.text as string
+				staticDuration: (driveData[0]?.staticDuration as string) || '0s',
+				localizedValue: (driveData[0]?.localizedValues?.staticDuration?.text as string) || '0 mins'
 			},
 			transit: {
-				staticDuration: transitData[0].staticDuration as string,
-				localizedValue: transitData[0].localizedValues.staticDuration.text as string
+				staticDuration: (transitData[0]?.staticDuration as string) || '0s',
+				localizedValue:
+					(transitData[0]?.localizedValues?.staticDuration?.text as string) || '0 mins'
 			}
 		};
 	}
