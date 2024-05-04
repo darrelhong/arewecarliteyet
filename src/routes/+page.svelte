@@ -87,7 +87,7 @@
 			{/if}
 		</p>
 		<span
-			class="mt-10 justify-self-start rounded border border-2 border-green-700 p-2 font-medium text-green-700"
+			class="mt-10 justify-self-start rounded border border-2 border-teal-700 p-2 font-medium text-teal-700"
 			>Challenge: Try to achieve the smallest possible difference!</span
 		>
 	</div>
